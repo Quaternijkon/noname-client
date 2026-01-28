@@ -107,7 +107,9 @@
 	<script>
 		"use strict";
 		// 替换成你的 Cloudflare Worker WebSocket 地址（必须是 wss://）
-		window.NONAME_HALL_URL = "wss://noname-server.quaternijkon.workers.dev";
+		var protocol = window.location.protocol === 'https:' ? 'wss://' : 'ws://';
+		window.NONAME_HALL_URL = protocol + window.location.host + "/ws";
+		// window.NONAME_HALL_URL = "wss://play.quaternijkon.online/ws";
 	</script>
 	<script>
 		"use strict";

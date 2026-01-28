@@ -40,7 +40,7 @@ export class Library {
 	updateURLS = updateURLs;
 	updateURL = updateURLs.github;
 	mirrorURL = updateURLs.coding;
-	hallURL = typeof window !== "undefined" && window.NONAME_HALL_URL ? window.NONAME_HALL_URL : "wss://noname-server.quaternijkon.workers.dev";
+	hallURL = typeof window !== "undefined" && window.NONAME_HALL_URL ? window.NONAME_HALL_URL : "wss://play.quaternijkon.online/ws";
 	assetURL = assetURL;
 	userAgent = userAgentLowerCase;
 	characterDefaultPicturePath = characterDefaultPicturePath;

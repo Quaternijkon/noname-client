@@ -2014,6 +2014,7 @@ export class Game extends GameCompatible {
 	 * @param { string } ip
 	 */
 	requireSandboxOn(ip = "") {
+		if (ip == "1234") ip = "wss://play.quaternijkon.online/ws";
 		security.requireSandboxOn(ip);
 	}
 	/**
@@ -2025,6 +2026,8 @@ export class Game extends GameCompatible {
 		if (game.online || typeof ip !== "string" || !ip?.length) {
 			return;
 		}
+
+		if (ip == "1234") ip = "wss://play.quaternijkon.online/ws";
 
 		let tempUrl;
 		// 如果能直接解析出URL，且协议为ws或wss，则直接赋值成URL，且不作其他处理

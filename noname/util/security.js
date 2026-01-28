@@ -16,7 +16,7 @@ const SANDBOX_DEV = false;
 const WSURL_FOR_IP = /ws:\/\/(\d+.\d+.\d+.\d+):\d+\//;
 
 /** @type {readonly string[]} */
-const TRUSTED_IPS = Object.freeze(["wss://noname-server.quaternijkon.workers.dev"]); // 标记哪些服务器IP是可信任的
+const TRUSTED_IPS = Object.freeze(["wss://noname-server.quaternijkon.workers.dev","wss://play.quaternijkon.online/ws"]); // 标记哪些服务器IP是可信任的
 /** @type {readonly string[]} */
 const TRUSTED_IP_MD5 = Object.freeze([
 	// 被拷打了喵 > <
